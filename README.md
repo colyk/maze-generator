@@ -3,4 +3,4 @@ Simple gui and text maze generator
 
 ### Sample of work...
 
-![alt text](ibb.co/nLWGhw)
+![alt text](https://image.ibb.co/nqeQaG/maze.png)
