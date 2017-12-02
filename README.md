@@ -19,6 +19,6 @@ game.gui_maze(10)   # 10 pixel width
 ```
 from maze_generator import Maze
 
-game = Maze(35, 60) # 35 - width of gui window, 60 - height of window
+game = Maze(35, 60) # 35 - width of text block, 60 - height of text block
 game.text_maze()
 ```
