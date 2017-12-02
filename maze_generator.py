@@ -12,13 +12,13 @@ class Maze(object):
             print(e)
  
     def check_size(self, width, height):
-        """width and heighr must be odd"""
-        if width%2 == 0:
+        # width and height must be odd
+        if width % 2 == 0:
             self.width = width + 1
         else:
             self.width = width
 
-        if height%2 == 0:
+        if height % 2 == 0:
             self.height = height + 1
         else:
             self.height = height
@@ -120,6 +120,6 @@ class Maze(object):
             sys.stdout.write("\n")
 
 if __name__ == '__main__':
-    game = Maze(35,60)
+    game = Maze(35, 60)
     game.gui_maze(10)
     game.text_maze()
