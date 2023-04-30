@@ -12,7 +12,7 @@ class Maze:
 
         sys.setrecursionlimit(recursion_limit)
 
-    def _generate_maze(self):
+    def _generate_maze(self) -> None:
         self._init_maze()
         random.seed()
         self.maze[1][1] = 0
@@ -24,13 +24,13 @@ class Maze:
         self.maze[1][0] = 0
         self.maze[self.width - 2][self.height - 1] = 0
 
-    def _init_maze(self):
+    def _init_maze(self) -> None:
         for i in range(0, self.width):
             self.maze[i] = dict()
             for y in range(0, self.height):
                 self.maze[i][y] = 1
 
-    def _carve_maze(self, x, y):
+    def _carve_maze(self, x: int, y: int) -> None:
         direction = random.randint(0, 3)
         step_count = 0
         while step_count < 4:
