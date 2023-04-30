@@ -1,24 +1,27 @@
-# Maze-generator
-Simple gui and text maze generator.
+# Maze generator
+GUI and console maze generator.
 
-### Sample of work...
-
-  >  ![alt text](https://image.ibb.co/nqeQaG/maze.png)
+### How it works
+GUI version
+  >  ![GUI example](https://i.ibb.co/F6MTcdq/photo-2023-04-30-23-48-15.jpg)
+Console version
+  >  ![console example](https://i.ibb.co/7yFb4PM/photo-2023-04-30-23-48-17.jpg)
   
-### Sample of gui maze generation  
+### How to run
+GUI version
 
 ```python
 from maze_generator import Maze
 
-game = Maze(35, 60) # 35 - width of gui window, 60 - height of window
-game.gui_maze(10)   # 10 pixel width
+maze = Maze(width=35, height=60)
+maze.gui_maze(wall_size=10)
 ```
     
-### Sample of text maze generation  
+Console version
 
 ```python
 from maze_generator import Maze
 
-game = Maze(35, 60) # 35 - width of text block, 60 - height of text block
-game.text_maze()
+maze = Maze(width=35, height=60)
+maze.text_maze()
 ```
